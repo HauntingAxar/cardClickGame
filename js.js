@@ -1,6 +1,7 @@
 const cardList = document.querySelector('.cardList');
 let counter = 0;
 const score = document.querySelector('.score');
+const img = document.getElementById('image')
 
 buildBoard();
 
@@ -27,6 +28,10 @@ cardList.addEventListener('click', function(e){
     let children = cardList.children;
     if (children.length < 1) {
         clearInterval(interval);
+    }if (score > 51{
+        img = src="https://i0.wp.com/www.comicschau.de/wp-content/uploads/2022/12/german-cola-kid-yippie-yippee-meme-tbh-creature.png?resize=770%2C433&ssl=1";
+    }if (score <= 50{
+
     }
     score.textContent = `Score: ${counter}`;
 });
