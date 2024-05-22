@@ -1,7 +1,7 @@
 const cardList = document.querySelector('.cardList');
 let counter = 0;
 const score = document.querySelector('.score');
-const img = document.getElementById('image')
+const image = document.getElementById('image');
 
 buildBoard();
 
@@ -28,10 +28,16 @@ cardList.addEventListener('click', function(e){
     let children = cardList.children;
     if (children.length < 1) {
         clearInterval(interval);
-    }if (score > 51{
-        img = src="https://i0.wp.com/www.comicschau.de/wp-content/uploads/2022/12/german-cola-kid-yippie-yippee-meme-tbh-creature.png?resize=770%2C433&ssl=1";
-    }if (score <= 50{
-
+        if (counter >= 50){
+            let img = document.createElement('img');
+            img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajXJybObABvgK_kZ4i_RB-uSYTNOy0Y7Kjv54XKuxRBFTPwxQlD4vOMRLAERuXx4qb3g&usqp=CAU";
+            image.appendChild(img);
+        }
+        else{
+            let img = document.createElement('img');
+            img.src="https://i0.wp.com/www.comicschau.de/wp-content/uploads/2022/12/german-cola-kid-yippie-yippee-meme-tbh-creature.png?resize=770%2C433&ssl=1";
+            image.appendChild(img);
+        }
     }
     score.textContent = `Score: ${counter}`;
 });
